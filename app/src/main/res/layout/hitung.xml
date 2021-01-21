@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/warna"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/putih" >
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/dzikir"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Dzikir Yuk !"
+            android:textSize="50dp" />
+
+
+        <TextView
+            android:id="@+id/txtNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dzikir"
+            android:text="0"
+            android:textColor="#212121"
+            android:textSize="100dp" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnTambah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="( + ) COUNT"
+            android:layout_below="@id/txtNilai"
+            android:background="@drawable/button"/>
+
+
+        <Button
+            android:layout_marginTop="100dp"
+            android:id="@+id/btnReset"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtNilai"
+            android:background="@drawable/btn"
+            android:text="RESET" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
